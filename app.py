@@ -56,12 +56,4 @@ Règles absolues :
                 st.success("Audit terminé :")
                 st.markdown(reponse.choices[0].message.content)
             except Exception as e:
-                st.error("Erreur avec l'API OpenAI. Vérifiez votre clé ou votre solde.")                    messages=[
-                        {"role": "system", "content": prompt_systeme},
-                        {"role": "user", "content": formule}
-                    ]
-                )
-                st.success("Audit terminé :")
-                st.markdown(reponse.choices[0].message.content)
-            except Exception as e:
                 st.error("Erreur avec l'API OpenAI. Vérifiez votre clé ou votre solde.")
